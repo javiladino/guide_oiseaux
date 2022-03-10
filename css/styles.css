@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --gris: #696969;
+    --orange-pico: #fbb432;
+    --verde-bird: #38e5ba;
+    --violeta: #8267d2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+
+body {
+    margin: 0;
+    background: rgba(0, 0, 0, .6) url('../images/bg_nantes_01.jpg');
+    font-family: 'Source Sans Pro', sans-serif;
+    /* background-color: rgb(10, 10, 10); */
+	  color: #fff;
+    background-blend-mode: darken;
+  }
+
+nav {
+    background: #1D202B;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-bottom: 1px solid var(--verde-bird);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: normal;
+  }
+  
+  h1 {
+      font-size: 40px;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      color: white;
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+  }
+
+h1 strong {
+  color: var(--orange-pico)
+}
+
+h2 strong {
+  color: var(--verde-bird)
+}
+
+  .hero {
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.information {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.bird-image {
+  width: 280px;
+  height: 260px;
+  border-radius: 10px;
+
+}
+
+.access {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  width: 310px;
+  /* flex-shrink: 0; */
+  /* border-radius: 10px; */
+  /* overflow: hidden; */
+  background-color: var(--orange-pico);
+}
+
+.access-imageContainer {
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+}
+
+.access-imageContainer img {
+  width: 100%;
+  position: absolute;
+  top: 0.3rem;
+}
+
+.access-detail {
+  padding: 10px 15px;
+  margin: 10px;
+}
+
+.access-detail p {
+  color: var(--white);
+
+}
+
+.email-url {
+  color: var(--violeta);
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+}
+
+.container-access {
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.form.email {
+ padding: 20px;
+}
+
+.form-email button {
+  background-color: var(--gris) ;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.form-email input {
+  padding: 8px;
+}
+
+.mot-pass {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 30px;
+  background-color: var(--orange-pico);
+}
+
+  .container {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+	/* Flexbox
+	display: flex;
+	gap: 20px; */
+
+	/* grid */
+	display: grid;
+	grid-template-columns: 3fr;
+	gap: 20px;
+}
+
+  .container-steps {
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+  background-blend-mode: darken;
+	/* Flexbox
+	width: calc(33.33% - 20px); */
+}
+
+.card .textos {
+	height: 100%;
+	font-size: 30px;
+    color: var(--orange-pico);
+    text-align: center;
+
+	/* Flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+		/* Grid
+		display: grid;
+		grid-template-rows: 1fr auto; */
+}
+
+    .navbar-right ul,
+    .navbar-left ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        gap: 10px;
+    }
+    
+    .navbar-left {
+    display: flex;
+
+    /* Grid */
+    /* display: grid;
+    grid-template-columns: ; */
+  }
+  .navbar-left ul {
+    margin-left: 12px;
+  }
+
+  .navbar-right ul li a,
+  .navbar-left ul li a {
+    text-decoration: none;
+    color: var(--orange-pico);
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .navbar-right ul li a:hover,  
+  .navbar-left ul li a:hover {
+    border: 1px solid var(--verde-bird);
+    color: var(--verde-bird);
+  }
+
+ 
+
+  .menu {
+    display: none;
+    height: inherit;
+}
+
+.logo {
+    width: 170px;
+}
+
+.footer {
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
