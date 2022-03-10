@@ -87,7 +87,7 @@ h2 strong {
   /* flex-shrink: 0; */
   /* border-radius: 10px; */
   /* overflow: hidden; */
-  background-color: var(--orange-pico);
+  background-color: var(--violeta);
 }
 
 .access-imageContainer {
@@ -115,7 +115,7 @@ h2 strong {
 }
 
 .email-url {
-  color: var(--violeta);
+  color: var(--orange-pico);
   border: 1px solid;
   padding: 5px 20px;
   text-decoration: none;
@@ -199,8 +199,9 @@ h2 strong {
 .card .textos {
 	height: 100%;
 	font-size: 30px;
-    color: var(--orange-pico);
-    text-align: center;
+  color: var(--orange-pico);
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
 
 	/* Flexbox */
 	display: flex;
